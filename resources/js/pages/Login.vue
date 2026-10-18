@@ -1,6 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import AppLayout from '../Layouts/AppLayout.vue';
+import AppLayout from '../layouts/AppLayout.vue';
 
 defineProps({
     tenants: { type: Array, required: true },

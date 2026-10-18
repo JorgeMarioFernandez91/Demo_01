@@ -1,7 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
-import AppLayout from '../../Layouts/AppLayout.vue';
-import StatusBadge from '../../Components/StatusBadge.vue';
+import AppLayout from '../../layouts/AppLayout.vue';
+import StatusBadge from '../../components/StatusBadge.vue';
 
 defineProps({
     ticket: { type: Object, required: true },
