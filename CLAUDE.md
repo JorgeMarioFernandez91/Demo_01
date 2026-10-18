@@ -8,6 +8,7 @@ Multi-tenant helpdesk demo: tenants, users, tickets and help articles.
 - Vue 3 via Inertia (v3), Vite, Tailwind 4
 - Pest for tests, Pint (Laravel preset) for code style
 - CI: `.github/workflows/ci.yml` runs Pint and Pest on every push
+- Claude API: key in `ANTHROPIC_API_KEY` (`.env`, never committed), read via `config('services.anthropic')`
 
 ## Commands
 
