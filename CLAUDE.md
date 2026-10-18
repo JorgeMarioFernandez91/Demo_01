@@ -49,6 +49,7 @@ Run `vendor/bin/pint --test` and `vendor/bin/pest` before you consider a change 
   no slashes or prefixes like `feat/`, max 30 characters total.
 - Bug fixes start with `fix-` after the prefix (`demo-fix-...`); everything else needs no type word.
 - One branch per PR; branch from an up-to-date `main`. Never commit directly to `main`.
+- Work in the main checkout. Don't create or use git worktrees unless explicitly asked.
 
 ## Working style
 
