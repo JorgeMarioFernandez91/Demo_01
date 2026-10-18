@@ -56,3 +56,10 @@ Run `vendor/bin/pint --test` and `vendor/bin/pest` before you consider a change 
 - Keep changes small and focused: one concern per PR, no drive-by refactors.
 - Follow existing Laravel conventions and the surrounding code style.
 - Add or update Pest tests with every behavior change.
+
+
+## Plans
+
+- When planning something out, first give me a high level breakdown of the ensuing plan before you get technical.
+- If I've asked you to modify the plan make sure you highlight the changes to the plan and what it looks like now.
+- There's no need to be so technical, but be sure you communicate your intentions clearly.
