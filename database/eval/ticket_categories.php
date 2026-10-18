@@ -11,10 +11,10 @@ return [
     ['subject' => 'Refund for unused months', 'body' => 'We prepaid for a year but are shutting the project down. Can we get the remaining months refunded?', 'expected' => 'billing'],
     ['subject' => 'Sales tax added to invoice', 'body' => 'Our latest invoice suddenly includes sales tax. We are tax exempt and sent the certificate last year.', 'expected' => 'billing'],
     ['subject' => 'Upgrade mid-cycle', 'body' => 'If we move from Starter to Pro today, are we charged the full price or only for the rest of the month?', 'expected' => 'billing'],
-    // borderline: billing vs account
-    ['subject' => 'Finance team needs invoice access', 'body' => 'Our accountant should be able to download invoices but nothing else. How do we set that up?', 'expected' => 'billing'],
 
     // account
+    // borderline: account vs billing (setting up a restricted role is an account task)
+    ['subject' => 'Finance team needs invoice access', 'body' => 'Our accountant should be able to download invoices but nothing else. How do we set that up?', 'expected' => 'account'],
     ['subject' => 'Password reset link expired', 'body' => 'The password reset link says it has expired, even though I clicked it right away.', 'expected' => 'account'],
     ['subject' => 'Transfer workspace ownership', 'body' => 'I am leaving the company next week. How do I make my colleague the owner of our workspace?', 'expected' => 'account'],
     ['subject' => 'Change the name on my profile', 'body' => 'I recently got married and want my profile to show my new last name.', 'expected' => 'account'],

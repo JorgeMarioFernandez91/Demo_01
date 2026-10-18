@@ -90,11 +90,11 @@ it('has 15 samples with known categories', function () {
 });
 
 it('prints accuracy and the tickets it got wrong', function () {
-    // Tag every sample as billing: only the 4 billing samples are right.
+    // Tag every sample as billing: only the 3 billing samples are right.
     Http::fake(['api.anthropic.com/*' => Http::response(taggedResponse('billing'))]);
 
     $this->artisan('support:eval')
-        ->expectsOutputToContain('Accuracy: 4/15 (27%)')
+        ->expectsOutputToContain('Accuracy: 3/15 (20%)')
         ->expectsOutputToContain('Password reset link expired')
         ->assertSuccessful();
 });
