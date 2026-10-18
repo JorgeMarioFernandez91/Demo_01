@@ -14,6 +14,8 @@ class Ticket extends Model
 
     public const STATUSES = ['open', 'pending', 'closed'];
 
+    public const CATEGORIES = ['billing', 'account', 'bug', 'feature-request'];
+
     /**
      * @var list<string>
      */
