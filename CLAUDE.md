@@ -42,6 +42,14 @@ Run `vendor/bin/pint --test` and `vendor/bin/pest` before you consider a change 
 - `User` is intentionally not scoped: it is the source of tenant identity.
 - Any change touching tenant data needs a test that proves tenant B can't see tenant A's data.
 
+## Branches
+
+- Name every branch `demo-<short-name>`, e.g. `demo-ui-polish`, `demo-claude-api-key`, `demo-fix-ci-page-dirs`.
+- `<short-name>` is 2–4 lowercase words in kebab-case describing the change: only `a-z`, `0-9` and `-`,
+  no slashes or prefixes like `feat/`, max 30 characters total.
+- Bug fixes start with `fix-` after the prefix (`demo-fix-...`); everything else needs no type word.
+- One branch per PR; branch from an up-to-date `main`. Never commit directly to `main`.
+
 ## Working style
 
 - Keep changes small and focused: one concern per PR, no drive-by refactors.

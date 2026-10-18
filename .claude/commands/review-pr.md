@@ -47,6 +47,7 @@ Go through each item and mark ✅ / ⚠️ / ❌ with a one-line reason and `fil
 **Scope (CLAUDE.md: keep changes small)**
 - One concern per PR. Flag unrelated refactors, formatting churn, or a diff that should be split.
 - Flag PRs over ~400 changed lines (excluding lockfiles and generated files).
+- Head branch follows CLAUDE.md naming (`demo-<short-name>`, kebab-case, ≤ 30 chars). If not, flag it as non-blocking and suggest a name.
 
 **Tests**
 - Behavior changes have Pest tests. Tests assert behavior, not implementation.
@@ -85,6 +86,7 @@ Use this format:
 | Code style / Pint | ... | ... |
 | Tests | ... | ... |
 | Scope / size | ... | ... |
+| Branch name | ... | ... |
 | PR description | ... | ... |
 | Release plan | ... | ... |
 
